@@ -13,7 +13,7 @@ This project will filter and provide restaurants near the office for employees t
 ### Create Environment File
 
 ```bash
-cp env.example .env;
+cp .env.example .env
 ```
 
 ## Local Setup
@@ -62,6 +62,8 @@ In the project directory, you can run:
 
 To start the app in dev mode.\
 Open [http://localhost:5001](http://localhost:5001) to view it in the browser.
+
+The current main feature of the project is accessible through : [http://localhost:5001/restaurants/getBestMatch](http://localhost:5001/restaurants/getBestMatch)
 
 ### `npm start`
 
