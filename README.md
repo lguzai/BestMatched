@@ -26,6 +26,12 @@ npm install knex -g;
 npm install;
 ```
 
+For some cases it will be necessary:
+
+```bash
+npm install knex -g;
+```
+
 ### 2 - Start Database
 
 ```bash
