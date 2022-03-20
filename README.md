@@ -1,4 +1,4 @@
-# Getting Started with BestMatched [BestMatched](https://www.npmjs.com/package/...)
+# Getting Started with BestMatched [BestMatched](https://github.com/lguzai/BestMatched)
 This project will filter and provide restaurants near the office for employees to use
 
 ## Requirements
