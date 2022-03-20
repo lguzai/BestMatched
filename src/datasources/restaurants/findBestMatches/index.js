@@ -2,7 +2,7 @@
 const addFilters = require("./filters");
 const addOrderBy = require("./orderBy");
 
-const withinIntervalNotArchived = (knexBuilder) =>
+const withNoBlankedName = (knexBuilder) =>
   knexBuilder.whereRaw("coalesce(restaurants.name, '') <> ''");
 
 const findBestMatches =
@@ -18,7 +18,7 @@ const findBestMatches =
         knex.raw("cuisines.name as cuisine")
       )
       .where((builder) => addFilters(builder, filter))
-      .where((builder) => withinIntervalNotArchived(builder))
+      .where((builder) => withNoBlankedName(builder))
       .orderByRaw(addOrderBy())
       .paginate({
         isLengthAware: true,
